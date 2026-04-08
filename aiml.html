@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCE - Department of Artificial Intelligence and Machine Learning</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Specific Styles for AIML page layout reusing variables from style.css */
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- Top Bar --- */
+        .top-bar {
+            background-color: var(--primary);
+            color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5%;
+            font-size: 13px;
+        }
+
+        .top-bar-links a {
+            color: rgba(255, 255, 255, 0.9);
+            margin-right: 15px;
+            transition: color 0.2s;
+        }
+
+        .top-bar-links a:hover {
+            color: var(--accent);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 5px;
+            border-radius: var(--radius);
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            padding: 3px;
+            background: transparent;
+            color: #fff;
+        }
+
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* --- Main Header Navigation --- */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: var(--bg2);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-placeholder {
+            font-weight: bold;
+            color: var(--primary);
+            border: 1px solid var(--border);
+            padding: 10px;
+            text-align: center;
+            border-radius: var(--radius);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 13px;
+            color: var(--text2);
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* --- Page Title Section --- */
+        .page-title-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #0d2137 60%, #1a3a5c 100%);
+            padding: 40px 5%;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .page-title-section h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .page-title-section .subtitle {
+            font-size: 16px;
+            color: #93b8d4;
+            margin-top: 8px;
+            display: block;
+        }
+
+        /* --- Sub Navigation --- */
+        .sub-nav {
+            padding: 15px 5%;
+            text-align: center;
+            background: var(--bg2);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sub-nav a {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 13px;
+            margin: 0 8px;
+            transition: color 0.2s;
+        }
+
+        .sub-nav a:hover {
+            color: var(--accent);
+        }
+
+        .sub-nav span {
+            color: var(--border);
+        }
+
+        /* --- Main Content Area --- */
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr 280px;
+            gap: 30px;
+            padding: 30px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Left Sidebar - Contact Card */
+        .contact-card {
+            border: 1px solid var(--border);
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            border-radius: var(--radius);
+            background: var(--bg2);
+            overflow: hidden;
+        }
+
+        .contact-card-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .contact-card-body {
+            padding: 20px;
+        }
+
+        .profile-img-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: var(--bg3);
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            border: 2px solid var(--border);
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            font-size: 15px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .contact-card p {
+            font-size: 12px;
+            color: var(--text2);
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            font-size: 12px;
+            margin-top: 15px;
+            text-align: left;
+            color: var(--text2);
+        }
+
+        .contact-details p {
+            margin-bottom: 5px;
+        }
+
+        /* Center Content */
+        .main-content {
+            background: var(--bg2);
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
+        }
+
+        .main-content p {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: var(--text2);
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        /* Right Sidebar - Menu list */
+        .sidebar-menu {
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            background: var(--bg2);
+        }
+
+        .sidebar-menu-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .sidebar-menu ul li {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sidebar-menu ul li a {
+            display: block;
+            padding: 12px 15px;
+            font-size: 13px;
+            color: var(--text2);
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .sidebar-menu ul li a:hover {
+            background-color: var(--bg3);
+            color: var(--accent);
+            padding-left: 20px;
+        }
+
+        /* --- Footer --- */
+        .footer-top {
+            background-color: var(--bg3);
+            padding: 40px 5%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .footer-col h4 {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text2);
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-col ul li::before {
+            content: "• ";
+            color: var(--accent);
+        }
+
+        .contact-us-text {
+            font-size: 13px;
+            color: var(--text2);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-icons span {
+            display: inline-flex;
+            width: 32px;
+            height: 32px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg2);
+            color: var(--text3);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .social-icons span:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .footer-bottom {
+            background-color: var(--primary);
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-top {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-top {
+                grid-template-columns: 1fr;
+            }
+
+            .top-bar {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-links">
+            <a href="#">Faculty List</a> |
+            <a href="#">Research Center</a> |
+            <a href="#">News</a> |
+            <a href="#">Placement</a> |
+            <a href="#">Sports</a> |
+            <a href="#">Student Login</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search here...">
+            <span style="color:#555; cursor:pointer;">🔍</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo-left">
+            <img src="Images/wcebiglogo.png" alt="WCE Logo" class="logo-placeholder"
+                style="padding: 0; border: none; height: 50px; object-fit: contain;">
+        </div>
+        <nav class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">COURSES</a>
+            <a href="#">ACADEMICS</a>
+            <a href="#">EXAM CELL</a>
+            <a href="#">FACILITY</a>
+            <a href="#">IQAC</a>
+            <a href="#">R&D</a>
+            <a href="#">RESOURCES</a>
+        </nav>
+
+    </header>
+
+    <section class="page-title-section">
+        <h1><strong>Department of Artificial Intelligence and Machine Learning</strong></h1>
+        <span class="subtitle">Artificial Intelligence & Machine Learning (AI & ML)</span>
+    </section>
+
+    <nav class="sub-nav">
+        <a href="#">HOME</a> <span>|</span>
+        <a href="#">Vision and Mission</a> <span>|</span>
+        <a href="#">PEO, PO and PSO</a> <span>|</span>
+        <a href="#">Publications</a> <span>|</span>
+        <a href="#">Alumni</a> <span>|</span>
+        <a href="#">Association</a> <span>|</span>
+        <a href="#">Achievements</a> <span>|</span>
+        <a href="#">Placements</a> <span>|</span>
+        <a href="#">Social Activities</a> <span>|</span>
+        <a href="#">Research Projects</a>
+    </nav>
+
+    <main class="container">
+        <aside class="left-sidebar">
+            <div class="contact-card">
+                <div class="contact-card-header">Contact Information</div>
+                <div class="contact-card-body">
+                    <img src="Images/waghmaresir.png" alt="Dr. Vivek Nivrutirao Waghmare"
+                        class="profile-img-placeholder" style="object-fit: cover;">
+                    <h3>Dr. Vivek N. Waghmare</h3>
+                    <p><strong>Head of Department</strong><br>(Artificial Intelligence and Machine Learning)</p>
+                    <div class="contact-details">
+                        <p>📞 +91 233 2300383</p>
+                        <p>✉️ info@walchandsangli.ac.in</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <article class="main-content">
+            <p>The Department of Artificial Intelligence and Machine Learning at Walchand College of Engineering, Sangli
+                was established in 2024 with a vision to shape the future of technology and innovation. The department
+                focuses on building strong foundational knowledge along with advanced technical expertise in AI and ML.
+                With a curriculum aligned to global standards and industry needs, it emphasizes interdisciplinary
+                learning, problem-solving, and real-world applications. Equipped with modern laboratories,
+                high-performance computing facilities, and advanced software tools, the department provides an excellent
+                academic environment for students to learn, innovate, and excel.</p>
+            <p>The department prepares students for dynamic careers in Artificial Intelligence, Machine Learning, Data
+                Science, and emerging technologies. Through strong industry collaborations, internships, and research
+                opportunities, students gain hands-on experience and exposure to real-world challenges. Graduates are
+                highly sought-after by leading organizations such as Google, Amazon, and Microsoft. With a focus on
+                ethical AI, innovation, and lifelong learning, the department aims to develop globally competent
+                professionals capable of addressing complex societal and industrial challenges.</p>
+        </article>
+
+        <aside class="right-sidebar">
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    AIML Department Links
+                </div>
+                <ul>
+                    <li><a href="#">Course Structure</a></li>
+                    <li><a href="#">Laboratory Facilities</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Faculty Profiles</a></li>
+                    <li><a href="#">Research & Publications</a></li>
+                    <li><a href="#">Placements</a></li>
+                    <li><a href="#">Student Clubs</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Institutional Events</a></li>
+                    <li><a href="#">Student Scholarship List</a></li>
+                    <li><a href="#">NPTEL</a></li>
+                    <li><a href="#">Faculty Welfare</a></li>
+                    <li><a href="#">Core Values</a></li>
+                    <li><a href="#">Code Of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">UG.Courses</a></li>
+                    <li><a href="#">PG.Courses</a></li>
+                    <li><a href="#">Copyrights</a></li>
+                    <li><a href="#">Workshop</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">NSS</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Info Links</h4>
+                <ul>
+                    <li><a href="#">Placement</a></li>
+                    <li><a href="#">DTE Code</a></li>
+                    <li><a href="#">E-bulletin</a></li>
+                    <li><a href="#">Mandatory Disclosure</a></li>
+                    <li><a href="#">Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="contact-us-text">
+                    <strong>Campus Address</strong><br>
+                    Walchand College of Engineering, Vishrambag, Sangli – 416415, Maharashtra, India<br><br>
+                    <strong>Contact No :</strong> +91 233 2300383<br>
+                    <strong>Email :</strong> info@walchandsangli.ac.in
+                </div>
+                <div class="social-icons">
+                    <span>f</span>
+                    <span>t</span>
+                    <span>G+</span>
+                    <span>in</span>
+                    <span>ig</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Walchand College of Engineering. All Right Reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

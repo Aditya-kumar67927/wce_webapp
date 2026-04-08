@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walchand College of Engineering, Sangli</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════
+     NOTICE TICKER
+════════════════════════════════════════════════ -->
+  <div id="ticker">
+    <div class="ticker-label">📢 NOTICES</div>
+    <div class="ticker-track">
+      <div class="ticker-inner" id="ticker-inner">
+        <a href="#" onclick="openModal('notices-modal');return false;">Admissions 2025–26 Open – Apply Now for B.Tech,
+          M.Tech &amp; PhD Programs</a>
+        <a href="#" onclick="openModal('notices-modal');return false;">End Semester Exam Timetable Published – Check
+          Academic Section</a>
+        <a href="#" onclick="openModal('notices-modal');return false;">Campus Placements Drive – TCS, Infosys, L&amp;T
+          visiting campus this month</a>
+        <span>NAAC A+ Grade Accredited | NIRF Ranking 2024 Announced</span>
+        <a href="#" onclick="openModal('notices-modal');return false;">National Level Technical Fest "YANTRA 2025" –
+          Register Now</a>
+        <!-- Duplicate for seamless loop -->
+        <a href="#" onclick="openModal('notices-modal');return false;">Admissions 2025–26 Open – Apply Now for B.Tech,
+          M.Tech &amp; PhD Programs</a>
+        <a href="#" onclick="openModal('notices-modal');return false;">End Semester Exam Timetable Published – Check
+          Academic Section</a>
+        <a href="#" onclick="openModal('notices-modal');return false;">Campus Placements Drive – TCS, Infosys, L&amp;T
+          visiting campus this month</a>
+        <span>NAAC A+ Grade Accredited | NIRF Ranking 2024 Announced</span>
+        <a href="#" onclick="openModal('notices-modal');return false;">National Level Technical Fest "YANTRA 2025" –
+          Register Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+     STICKY NAVBAR
+════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a class="nav-brand" href="#">
+      <div class="nav-logo">
+        <img src="Images/logo.png" alt="WCE" onerror="this.parentElement.innerHTML='WCE'">
+      </div>
+      <div class="nav-title">
+        <span class="name">Walchand College of Engineering</span>
+        <span class="sub">Sangli, Maharashtra · Est. 1947</span>
+      </div>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <a href="#hero" class="dropdown-trigger active" data-t="navAbout">About WCE <i class="fas fa-chevron-down"></i></a>
+        <div class="mega-menu large-mega-menu">
+          <div class="mega-column boxed-column">
+            <h4 class="has-icon"><i class="fas fa-arrow-circle-right"></i> <a href="#">WCE at Glance</a></h4>
+            <h4 class="has-icon mt-15"><i class="fas fa-arrow-circle-right"></i> <span>Leadership &amp; Governance</span></h4>
+            <ul class="icon-list">
+              <li><a href="#"><i class="fas fa-caret-right"></i> Chairman</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Administrative Council</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> MTE Society</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Walchand Trust</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Vision and Mission</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Admin Council Subcommittees</a></li>
+            </ul>
+          </div>
+          <div class="mega-column boxed-column">
+            <h4 class="has-icon"><i class="fas fa-arrow-circle-right"></i> <span>Institute Management</span></h4>
+            <ul class="icon-list">
+              <li><a href="#"><i class="fas fa-caret-right"></i> Director</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Deputy Director</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Vice Principal (Polytechnic)</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> College Development Council</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Academic Council</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Boards of Studies</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> IQAC</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Organogram/organization structure</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Heads and Deans</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Managerial and Admin staff</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> College Committees</a></li>
+            </ul>
+          </div>
+          <div class="mega-column boxed-column">
+            <h4 class="has-icon"><i class="fas fa-arrow-circle-right"></i> <span>Affiliations and accreditations</span></h4>
+            <ul class="icon-list">
+              <li><a href="#"><i class="fas fa-caret-right"></i> UGC, AICTE and Shivaji University</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> NIRF, NBA and NAAC</a></li>
+            </ul>
+            <h4 class="has-icon mt-15"><i class="fas fa-arrow-circle-right"></i> <span>Compliances and Disclosures</span></h4>
+            <ul class="icon-list">
+              <li><a href="#"><i class="fas fa-caret-right"></i> Mandatory Disclosures</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Annual Reports</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> IQAC Reports</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> Academic Audits</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> NIRF submissions</a></li>
+              <li><a href="#"><i class="fas fa-caret-right"></i> RTI</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nav-dropdown">
+        <a href="#section2" data-t="navAcademics" class="dropdown-trigger">Academics <i class="fas fa-chevron-down"></i></a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h4>Departments at WCE</h4>
+            <ul>
+              <li><a href="aiml.html">AI &amp; ML</a></li>
+              <li><a href="#">Computer Science</a></li>
+              <li><a href="#">Information Technology</a></li>
+              <li><a href="#">Electronics</a></li>
+              <li><a href="#">Electrical</a></li>
+              <li><a href="#">Mechanical</a></li>
+              <li><a href="#">Civil</a></li>
+            </ul>
+          </div>
+          <div class="mega-column">
+            <h4>Academic Resources</h4>
+            <ul>
+              <li><a href="#">Academic Philosophy</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">Rules &amp; Regulations</a></li>
+              <li><a href="#">Library</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" onclick="openModal('admissions-modal');return false;" data-t="navAdmissions">Admissions</a>
+      <!-- <a href="#" onclick="openModal('departments-modal');return false;" data-t="navDepts">Departments</a> -->
+      <a href="#" onclick="openModal('research-modal');return false;" data-t="navResearch">Research</a>
+      <a href="#section3" data-t="navPlacements">Placements</a>
+      
+      <div class="nav-dropdown student-dropdown">
+        <a href="#" onclick="return false;" data-t="navStudentLife" class="dropdown-trigger">Student Life <i class="fas fa-chevron-down"></i></a>
+        <div class="mega-menu small-mega-menu">
+          <div class="mega-column">
+            <ul>
+              <li><a href="#" onclick="openModal('events-modal');return false;">Clubs &amp; Events</a></li>
+              <li><a href="#">Hostel Facilities</a></li>
+              <li><a href="#">Sports &amp; Gym</a></li>
+              <li><a href="#">Students Council</a></li>
+              <li><a href="#">Art Circle</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" onclick="openModal('contact-modal');return false;" data-t="navContact">Contact</a>
+    </div>
+
+    <div class="nav-right">
+      <!-- Search -->
+      <div class="search-wrap">
+        <input type="text" id="search-input" placeholder="Search..." oninput="doSearch(this.value)">
+        <i class="fas fa-search search-icon"></i>
+        <div id="search-results"></div>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" onclick="setLang('hi')">हिंदी</button>
+        <button class="lang-btn" onclick="setLang('mr')">मराठी</button>
+      </div>
+
+      <!-- Dark Mode -->
+      <button id="dark-toggle" onclick="toggleDark()" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <!-- Mobile Hamburger -->
+      <button id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════
+     LEFT SIDEBAR
+════════════════════════════════════════════════ -->
+  <aside id="left-sidebar">
+    <a class="sb-icon" href="#hero">
+      <i class="fas fa-home"></i><span class="tooltip">Home</span>
+    </a>
+    <a class="sb-icon" href="#" onclick="openModal('notices-modal');return false;">
+      <i class="fas fa-bell"></i><span class="tooltip">Notices</span>
+    </a>
+    <div class="sb-divider"></div>
+    <a class="sb-icon" href="#" onclick="openModal('events-modal');return false;">
+      <i class="fas fa-calendar-days"></i><span class="tooltip">Events</span>
+    </a>
+    <a class="sb-icon" href="#" onclick="openModal('gallery-modal');return false;">
+      <i class="fas fa-images"></i><span class="tooltip">Gallery</span>
+    </a>
+    <div class="sb-divider"></div>
+
+    <a class="sb-icon" href="#" onclick="openModal('map-modal');return false;">
+      <i class="fas fa-map-location-dot"></i><span class="tooltip">Map</span>
+    </a>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════
+     RIGHT SIDEBAR
+════════════════════════════════════════════════ -->
+  <aside id="right-sidebar">
+    <a class="rsb-btn primary-btn" href="#" onclick="openModal('admissions-modal');return false;">
+      <i class="fas fa-pen-to-square"></i>
+      <span data-t="applyNow">Apply</span>
+    </a>
+    <a class="rsb-btn" href="#">
+      <i class="fas fa-file-pdf"></i>
+      <span data-t="brochure">Info</span>
+    </a>
+    <a class="rsb-btn" href="https://erp.walchandsangli.ac.in" target="_blank">
+      <i class="fas fa-user-graduate"></i>
+      <span data-t="studentPortal">Student</span>
+    </a>
+    <a class="rsb-btn" href="#">
+      <i class="fas fa-chalkboard-user"></i>
+      <span data-t="facultyPortal">Faculty</span>
+    </a>
+    <a class="rsb-btn" href="#">
+      <i class="fas fa-users"></i>
+      <span data-t="alumni">Alumni</span>
+    </a>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════
+     MAIN CONTENT
+════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─────────────────────────────────────────────
+       SECTION 1 — HERO  (75vh, scrolling bg photos)
+  ───────────────────────────────────────────── -->
+    <section id="hero">
+
+      <!-- Background photo slideshow (10 photos, scroll right→left) -->
+      <div class="hero-bg-strip" id="hero-bg-strip">
+        <div class="hero-bg-track" id="hero-bg-track">
+          <div class="hero-bg-slide active" style="background-image:url('Images/heroimages/20250220_154226-2048x946.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/Admin-Block-1.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/Admin-Block-5.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/Department-Of-Artificial-Intelligence-Machine-Learning.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/Saraswati-Statue.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/Steam-Engine.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/The-Globe.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.22%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.23%20PM%20(1).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.23%20PM%20(2).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.23%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.24%20PM%20(1).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.24%20PM%20(2).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.24%20PM%20(3).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.24%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.25%20PM%20(1).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.25%20PM%20(2).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.25%20PM%20(3).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.25%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.26%20PM%20(1).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.26%20PM%20(2).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.26%20PM%20(3).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.26%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.27%20PM%20(1).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.27%20PM%20(2).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.27%20PM%20(3).jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.27%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/WhatsApp%20Image%202026-04-05%20at%2011.53.28%20PM.jpeg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/campus-1.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/campus-2.jpg')"></div>
+          <div class="hero-bg-slide" style="background-image:url('Images/heroimages/student-housing-1-e1754120683239.jpg')"></div>
+        </div>
+      </div>
+
+      <!-- Dark gradient overlay so text is readable -->
+      <div class="hero-overlay"></div>
+
+      <!-- Hero content layered over bg -->
+      <div class="hero-content-layer">
+
+        <!-- Welcome text box (faded card, 2-3 lines) + Explore button -->
+        <div class="hero-welcome-box">
+          <div class="hero-welcome-inner">
+            <h2 class="hero-welcome-title">Welcome to WCE Sangli</h2>
+            <p class="hero-welcome-text">
+              Established in 1947, WCE Sangli is a premier autonomous engineering institute affiliated with Shivaji
+              University — blending 77+ years of academic excellence with cutting-edge research, state-of-the-art
+              facilities, and industry partnerships to empower students for a rapidly evolving world.
+            </p>
+            <ul class="hero-welcome-points">
+              <li><i class="fas fa-circle-check"></i> NAAC A+ Accredited · NBA Accredited · NIRF Ranked</li>
+              <li><i class="fas fa-circle-check"></i> 300+ companies recruit · ₹1.5 Cr highest package</li>
+              <li><i class="fas fa-circle-check"></i> 250+ CEOs · 75,000+ alumni worldwide</li>
+            </ul>
+            <a href="https://walchandsangli.ac.in/about/wce-at-glance/" target="_blank" class="hero-explore-btn">
+              Explore More &nbsp;<i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+       SECTION 2 — ACADEMICS + NOTICES + NEWS
+  ───────────────────────────────────────────── -->
+
+    <!-- ─────────────────────────────────────────────
+       SECTION 2 — ACADEMICS  +  PLACEMENT (full)  +  ADMISSIONS
+  ───────────────────────────────────────────── -->
+    <section id="section2">
+
+      <!-- Academics Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <h3><i class="fas fa-book-open"></i> <span data-t="academics">Academics</span></h3>
+          <a class="view-all" href="#" onclick="openModal('academics-modal');return false;">More ›</a>
+        </div>
+        <div class="panel-body">
+          <div class="dept-filter">
+            <select id="dept-select" onchange="filterDept(this.value)">
+              <option value="all">All Departments</option>
+              <option value="civil">Civil Engineering</option>
+              <option value="mech">Mechanical Engineering</option>
+              <option value="elec">Electrical Engineering</option>
+              <option value="comp">Computer Engineering</option>
+              <option value="it">Information Technology</option>
+              <option value="etrx">Electronics Engineering</option>
+              <option value="aiml">Artificial Intelligence & Machine Learning</option>
+              <option value="ra">Robotics and Automation</option>
+              <option value="instru">Instrumentation Engineering</option>
+              <option value="chem">Chemical Engineering</option>
+              <option value="prod">Production Engineering</option>
+              <option value="mba">MBA</option>
+            </select>
+          </div>
+          <div class="prog-tabs">
+            <div class="prog-tab active" onclick="switchTab('ug',this)" data-t="ug">UG</div>
+            <div class="prog-tab" onclick="switchTab('pg',this)" data-t="pg">PG</div>
+            <div class="prog-tab" onclick="switchTab('phd',this)" data-t="phd">PhD</div>
+          </div>
+          <div id="ug-content" class="prog-content active">
+            <ul class="prog-list">
+              <li><a href="https://example.com/departments/civil" target="_blank">B.E. Civil Engineering (120 seats)</a>
+              </li>
+              <li><a href="https://example.com/departments/mechanical" target="_blank">B.E. Mechanical Engineering (120
+                  seats)</a></li>
+              <li><a href="https://example.com/departments/computer" target="_blank">B.E. Computer Engineering (120
+                  seats)</a></li>
+              <li><a href="https://example.com/departments/electrical" target="_blank">B.E. Electrical Engineering (60
+                  seats)</a></li>
+              <li><a href="https://example.com/departments/electronics" target="_blank">B.E. Electronics Engineering (60
+                  seats)</a></li>
+              <li><a href="https://example.com/departments/it" target="_blank">B.E. Information Technology (60
+                  seats)</a></li>
+              <li><a href="aiml.html" target="_blank">B.E. Artificial Intelligence & Machine Learning (70 seats)</a>
+              </li>
+              <li><a href="https://example.com/departments/robotics" target="_blank">B.E. Robotics and Automation (70
+                  seats)</a></li>
+            </ul>
+          </div>
+          <div id="pg-content" class="prog-content">
+            <ul class="prog-list">
+              <li><a href="https://example.com/departments/civil" target="_blank">M.E. Structural Engineering
+                  (Civil)</a></li>
+              <li><a href="https://example.com/departments/civil" target="_blank">M.E. Construction Management
+                  (Civil)</a></li>
+              <li><a href="https://example.com/departments/mechanical" target="_blank">M.E. Machine Design
+                  (Mechanical)</a></li>
+              <li><a href="https://example.com/departments/mechanical" target="_blank">M.E. Heat Power Engineering
+                  (Mechanical)</a></li>
+              <li><a href="https://example.com/departments/mechanical" target="_blank">M.E. CAD/CAM (Mechanical)</a>
+              </li>
+              <li><a href="https://example.com/departments/electrical" target="_blank">M.E. Power Systems
+                  (Electrical)</a></li>
+              <li><a href="https://example.com/departments/electrical" target="_blank">M.E. Control Systems
+                  (Electrical)</a></li>
+              <li><a href="https://example.com/departments/electronics" target="_blank">M.E. VLSI & Embedded Systems
+                  (Electronics)</a></li>
+              <li><a href="https://example.com/departments/electronics" target="_blank">M.E. Communication Systems
+                  (Electronics)</a></li>
+              <li><a href="https://example.com/departments/computer" target="_blank">M.E. Computer Engineering</a></li>
+              <li><a href="https://example.com/departments/it" target="_blank">M.E. Information Technology</a></li>
+              <li><a href="https://example.com/departments/electronics" target="_blank">M.E. Industrial Electronics</a>
+              </li>
+              <li><a href="https://example.com/departments/instrumentation" target="_blank">M.E. Instrumentation &
+                  Control</a></li>
+              <li><a href="https://example.com/departments/chemical" target="_blank">M.E. Chemical Engineering</a></li>
+              <li><a href="https://example.com/departments/production" target="_blank">M.E. Production Engineering</a>
+              </li>
+              <li><a href="https://example.com/departments/mba" target="_blank">MBA (Technology Management)</a></li>
+              <li><a href="https://example.com/departments/mba" target="_blank">MBA (Operations Management)</a></li>
+              <li><a href="https://example.com/departments/mba" target="_blank">MBA (Finance & Marketing)</a></li>
+            </ul>
+          </div>
+          <div id="phd-content" class="prog-content">
+            <ul class="prog-list">
+              <li><a href="https://example.com/departments/civil" target="_blank">Ph.D. Civil Engineering (Structures,
+                  Geotechnical, Transportation)</a></li>
+              <li><a href="https://example.com/departments/mechanical" target="_blank">Ph.D. Mechanical Engineering
+                  (Design, Thermal, Manufacturing)</a></li>
+              <li><a href="https://example.com/departments/electrical" target="_blank">Ph.D. Electrical Engineering
+                  (Power, Control, Electronics)</a></li>
+              <li><a href="https://example.com/departments/electronics" target="_blank">Ph.D. Electronics Engineering
+                  (VLSI, Communication, Signal Processing)</a></li>
+              <li><a href="https://example.com/departments/computer" target="_blank">Ph.D. Computer Engineering (AI,
+                  Data Science, Cybersecurity)</a></li>
+              <li><a href="https://example.com/departments/it" target="_blank">Ph.D. Information Technology (Software
+                  Engineering, Networks)</a></li>
+              <li><a href="https://example.com/departments/chemical" target="_blank">Ph.D. Chemical Engineering
+                  (Process, Environmental, Materials)</a></li>
+              <li><a href="https://example.com/departments/production" target="_blank">Ph.D. Production Engineering
+                  (Manufacturing, Quality Control)</a></li>
+              <li><a href="https://example.com/departments/instrumentation" target="_blank">Ph.D. Instrumentation
+                  Engineering (Sensors, Automation)</a></li>
+              <li><a href="https://example.com/departments/mba" target="_blank">Ph.D. Management Studies (Technology
+                  Management, Operations)</a></li>
+              <li><a href="https://example.com/departments/applied-sciences" target="_blank">Ph.D. Applied Sciences
+                  (Mathematics, Physics, Chemistry)</a></li>
+              <li><a href="https://example.com/departments/research" target="_blank">Ph.D. Interdisciplinary Research
+                  (Emerging Technologies)</a></li>
+            </ul>
+          </div>
+          <div class="acad-links">
+            <a class="acad-link" href="#">📅 Calendar</a>
+            <a class="acad-link" href="#">📘 Syllabus</a>
+            <a class="acad-link" href="#">📋 Results</a>
+            <a class="acad-link" href="#">📝 Exam</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FULL PLACEMENT SECTION (like real WCE site) ── -->
+      <div class="panel placement-full-panel" id="placement-section">
+        <div class="panel-header">
+          <h3><i class="fas fa-trophy"></i> Excellence in Campus Placements</h3>
+          <a class="view-all" href="#" onclick="openModal('placement-modal')">Details ›</a>
+        </div>
+        <div class="panel-body" style="padding:10px 12px;">
+
+          <!-- Tagline -->
+          <p class="place-tagline">"Launching Careers, Transforming Futures"</p>
+
+          <!-- Stats Bar — 4 boxes like original site -->
+          <div class="place-stats-bar">
+            <div class="psb-item">
+              <i class="fas fa-trophy"></i>
+              <div class="psb-info">
+                <div class="psb-val">₹1.5 CR</div>
+                <div class="psb-lbl">Highest Package</div>
+              </div>
+            </div>
+            <div class="psb-item">
+              <i class="fas fa-briefcase"></i>
+              <div class="psb-info">
+                <div class="psb-val">₹12 LPA</div>
+                <div class="psb-lbl">Average Package</div>
+              </div>
+            </div>
+            <div class="psb-item">
+              <i class="fas fa-building"></i>
+              <div class="psb-info">
+                <div class="psb-val">300+</div>
+                <div class="psb-lbl">Companies Visit</div>
+              </div>
+            </div>
+            <div class="psb-item">
+              <i class="fas fa-user-check"></i>
+              <div class="psb-info">
+                <div class="psb-val">100%</div>
+                <div class="psb-lbl">Placement Assist</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Cards Carousel -->
+          <div class="place-carousel-wrap">
+            <button class="place-arrow left-arrow" onclick="shiftCarousel(-1)">&#8249;</button>
+            <div class="place-carousel-viewport">
+              <div class="place-carousel-track" id="place-track">
+
+                <div class="place-student-card">
+                  <div class="card-congrats">Heartiest<br><span>Congratulations</span></div>
+                  <div class="card-placed-at">For Successful Placement At:</div>
+                  <div class="card-company"><span class="company-name-badge" style="background:#00b4d8;">◆ rubrik</span>
+                  </div>
+                  <div class="card-photo"><img src="Images/placed/jay shirgupe.png" alt="Jay Shirguppe"></div>
+                  <div class="card-ctc">with CTC of <strong>1.5 Cr / Annum</strong></div>
+                  <div class="card-name">Jay Shirguppe</div>
+                  <div class="card-batch">B.Tech (Comp.)</div>
+                </div>
+
+                <div class="place-student-card">
+                  <div class="card-congrats">Heartiest<br><span>Congratulations</span></div>
+                  <div class="card-placed-at">For Successful Placement At:</div>
+                  <div class="card-company"><span class="company-name-badge" style="background:#222;">◆ CRED</span>
+                  </div>
+                  <div class="card-photo"><img src="Images/placed/aaradhya pitalwar.png" alt="Aardhya Pittalwar"></div>
+                  <div class="card-ctc">with CTC of <strong>52 LPA</strong></div>
+                  <div class="card-name">Aardhya Pittalwar</div>
+                  <div class="card-batch">B.Tech (Comp.)</div>
+                </div>
+
+                <div class="place-student-card">
+                  <div class="card-congrats">Heartiest<br><span>Congratulations</span></div>
+                  <div class="card-placed-at">For Successful Placement At:</div>
+                  <div class="card-company"><span class="company-name-badge"
+                      style="background:#0078d4;">Microsoft</span></div>
+                  <div class="card-photo"><i class="fas fa-user-graduate"></i></div>
+                  <div class="card-ctc">with CTC of <strong>45 LPA</strong></div>
+                  <div class="card-name">Rohit Patil</div>
+                  <div class="card-batch">B.Tech (Comp.)</div>
+                </div>
+
+                <div class="place-student-card">
+                  <div class="card-congrats">Heartiest<br><span>Congratulations</span></div>
+                  <div class="card-placed-at">For Successful Placement At:</div>
+                  <div class="card-company"><span class="company-name-badge"
+                      style="background:#ff6600;">Persistent</span></div>
+                  <div class="card-photo"><i class="fas fa-user-graduate"></i></div>
+                  <div class="card-ctc">with CTC of <strong>28 LPA</strong></div>
+                  <div class="card-name">Sneha Kulkarni</div>
+                  <div class="card-batch">B.Tech (Mech.)</div>
+                </div>
+
+              </div>
+            </div>
+            <button class="place-arrow right-arrow" onclick="shiftCarousel(1)">&#8250;</button>
+          </div>
+
+          <!-- Carousel dots -->
+          <div class="carousel-dots" id="carousel-dots">
+            <span class="cdot active" onclick="goToSlide(0)"></span>
+            <span class="cdot" onclick="goToSlide(1)"></span>
+            <span class="cdot" onclick="goToSlide(2)"></span>
+            <span class="cdot" onclick="goToSlide(3)"></span>
+          </div>
+
+          <!-- Hiring Partners auto-scrolling strip -->
+          <div class="hiring-partners-label">Hiring Partners</div>
+          <div class="hiring-logos-wrap">
+            <div class="hiring-logos-track" id="hiring-track">
+              <span class="hl">YES BANK</span>
+              <span class="hl" style="color:#e11;">Vishal</span>
+              <span class="hl" style="color:#00a;">Videocon</span>
+              <span class="hl" style="color:#c00;">Tech Mahindra</span>
+              <span class="hl">Tata AIG</span>
+              <span class="hl" style="color:#0a0;">iGATE</span>
+              <span class="hl" style="color:#e67e22;">Indiamart</span>
+              <span class="hl">Innodata</span>
+              <span class="hl">InterGlobe</span>
+              <span class="hl" style="color:#c00;">Johnson Controls</span>
+              <span class="hl" style="color:#0057a8;">HALONIX</span>
+              <span class="hl">ENAR</span>
+              <span class="hl" style="color:#c00;">Audi</span>
+              <span class="hl">Axiom India</span>
+              <span class="hl">Franchise India</span>
+              <span class="hl">KPIT</span>
+              <span class="hl" style="color:#0057a8;">L&amp;T</span>
+              <span class="hl">Cummins</span>
+              <span class="hl">TCS</span>
+              <span class="hl" style="color:#007dc6;">Infosys</span>
+              <!-- duplicate for seamless loop -->
+              <span class="hl">YES BANK</span>
+              <span class="hl" style="color:#e11;">Vishal</span>
+              <span class="hl" style="color:#00a;">Videocon</span>
+              <span class="hl" style="color:#c00;">Tech Mahindra</span>
+              <span class="hl">Tata AIG</span>
+              <span class="hl" style="color:#0a0;">iGATE</span>
+              <span class="hl" style="color:#e67e22;">Indiamart</span>
+              <span class="hl">Innodata</span>
+              <span class="hl">InterGlobe</span>
+              <span class="hl" style="color:#c00;">Johnson Controls</span>
+              <span class="hl" style="color:#0057a8;">HALONIX</span>
+              <span class="hl">ENAR</span>
+              <span class="hl" style="color:#c00;">Audi</span>
+              <span class="hl">Axiom India</span>
+              <span class="hl">Franchise India</span>
+              <span class="hl">KPIT</span>
+              <span class="hl" style="color:#0057a8;">L&amp;T</span>
+              <span class="hl">Cummins</span>
+              <span class="hl">TCS</span>
+              <span class="hl" style="color:#007dc6;">Infosys</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admissions Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <h3><i class="fas fa-graduation-cap"></i> <span data-t="admissions">Admissions</span></h3>
+          <a class="view-all" href="#" onclick="openModal('admissions-modal')">More ›</a>
+        </div>
+        <div class="panel-body">
+          <div class="admit-intro">Apply to one of Maharashtra's premier autonomous engineering institutes.</div>
+          <div class="admit-modes">
+            <div class="admit-mode-card">
+              <div class="admit-badge" style="background:#e8f4fd;color:#1a5276;">B.E.</div>
+              <div class="admit-mode-info">
+                <div class="admit-mode-title">Undergraduate</div>
+                <div class="admit-mode-sub">JEE Main / MHT-CET · CAP</div>
+              </div>
+            </div>
+            <div class="admit-mode-card">
+              <div class="admit-badge" style="background:#eafaf1;color:#1e8449;">M.E./MBA</div>
+              <div class="admit-mode-info">
+                <div class="admit-mode-title">Postgraduate</div>
+                <div class="admit-mode-sub">GATE / MAH-ME CET / MAH-MBA CET</div>
+              </div>
+            </div>
+            <div class="admit-mode-card">
+              <div class="admit-badge" style="background:#fef9e7;color:#9a7d0a;">Ph.D.</div>
+              <div class="admit-mode-info">
+                <div class="admit-mode-title">Doctorate</div>
+                <div class="admit-mode-sub">Entrance Test + Interview</div>
+              </div>
+            </div>
+            <div class="admit-mode-card">
+              <div class="admit-badge" style="background:#fdf2f8;color:#8e44ad;">DSY</div>
+              <div class="admit-mode-info">
+                <div class="admit-mode-title">Lateral Entry</div>
+                <div class="admit-mode-sub">Diploma holders – 2nd year direct</div>
+              </div>
+            </div>
+          </div>
+          <div class="admit-dates">
+            <div class="admit-dates-title"><i class="fas fa-calendar-alt"></i> Important Dates 2025</div>
+            <div class="admit-date-row"><span class="admit-date-lbl">MHT-CET Exam</span><span class="admit-date-val">Apr
+                – May 2025</span></div>
+            <div class="admit-date-row"><span class="admit-date-lbl">CAP Round 1</span><span class="admit-date-val">June
+                2025</span></div>
+            <div class="admit-date-row"><span class="admit-date-lbl">CAP Round 2</span><span class="admit-date-val">July
+                2025</span></div>
+            <div class="admit-date-row"><span class="admit-date-lbl">Classes Begin</span><span
+                class="admit-date-val">Aug 2025</span></div>
+          </div>
+          <a href="https://cetcell.mahacet.org" target="_blank" class="admit-apply-btn">
+            <i class="fas fa-pen-to-square"></i> Apply via MHT-CET Portal
+          </a>
+          <div class="admit-contact">📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="0160656c687272686e6f724176606d6269606f6572606f666d682f60622f686f">[email&#160;protected]</a>
+            &nbsp;|&nbsp; 📞 +91 233 2700 170</div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ─────────────────────────────────────────────
+       SECTION 3 — WALCHAND ALUMNI
+  ───────────────────────────────────────────── -->
+    <section id="section3" class="alumni-section-full">
+
+      <div class="alumni-section-header">
+        <div class="alumni-sec-title">
+          <i class="fas fa-user-tie"></i>
+          <span>Walchand Alumni — Leaders &amp; Legends</span>
+        </div>
+        <div class="alumni-sec-stats">
+          <span class="alum-stat-pill"><strong>75,000+</strong> Alumni Worldwide</span>
+          <span class="alum-stat-pill"><strong>250+</strong> CEOs</span>
+          <span class="alum-stat-pill"><strong>40+</strong> Countries</span>
+        </div>
+        <a href="http://alumni.walchandsangli.ac.in" target="_blank" class="alumni-portal-btn">
+          <i class="fas fa-external-link-alt"></i> Alumni Portal
+        </a>
+      </div>
+
+      <div class="alumni-body-grid">
+
+        <!-- Left: The Walchand Legacy Timeline -->
+        <div class="alumni-cards-col">
+          <div class="alumni-col-label">📜 The Walchand Legacy: From Foundation to Excellence</div>
+          <div class="timeline-container">
+            <div class="timeline-track">
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175321.png" alt="1947 Event" class="timeline-img">
+                <h2 class="timeline-year">1947</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175331.png" alt="1955 Event" class="timeline-img">
+                <h2 class="timeline-year">1955</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175355.png" alt="1965 Event" class="timeline-img">
+                <h2 class="timeline-year">1965</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175403.png" alt="1970 Event" class="timeline-img">
+                <h2 class="timeline-year">1970</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175410.png" alt="1971 Event" class="timeline-img">
+                <h2 class="timeline-year">1971</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175424.png" alt="1977 Event" class="timeline-img">
+                <h2 class="timeline-year">1977</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175432.png" alt="2003 Event" class="timeline-img">
+                <h2 class="timeline-year">2003</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175439.png" alt="2005 Event" class="timeline-img">
+                <h2 class="timeline-year">2005</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175445.png" alt="2007 Event" class="timeline-img">
+                <h2 class="timeline-year">2007</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175453.png" alt="2008 Event" class="timeline-img">
+                <h2 class="timeline-year">2008</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175500.png" alt="2021 Event" class="timeline-img">
+                <h2 class="timeline-year">2021</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175506.png" alt="2023 Event" class="timeline-img">
+                <h2 class="timeline-year">2023</h2>
+              </div>
+
+              <!-- Duplicate for seamless loop -->
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175321.png" alt="1947 Event" class="timeline-img">
+                <h2 class="timeline-year">1947</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175331.png" alt="1955 Event" class="timeline-img">
+                <h2 class="timeline-year">1955</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175355.png" alt="1965 Event" class="timeline-img">
+                <h2 class="timeline-year">1965</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175403.png" alt="1970 Event" class="timeline-img">
+                <h2 class="timeline-year">1970</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175410.png" alt="1971 Event" class="timeline-img">
+                <h2 class="timeline-year">1971</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175424.png" alt="1977 Event" class="timeline-img">
+                <h2 class="timeline-year">1977</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175432.png" alt="2003 Event" class="timeline-img">
+                <h2 class="timeline-year">2003</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175439.png" alt="2005 Event" class="timeline-img">
+                <h2 class="timeline-year">2005</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175445.png" alt="2007 Event" class="timeline-img">
+                <h2 class="timeline-year">2007</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175453.png" alt="2008 Event" class="timeline-img">
+                <h2 class="timeline-year">2008</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175500.png" alt="2021 Event" class="timeline-img">
+                <h2 class="timeline-year">2021</h2>
+              </div>
+
+              <div class="timeline-item">
+                <img src="Images/timeline/Screenshot 2026-03-29 175506.png" alt="2023 Event" class="timeline-img">
+                <h2 class="timeline-year">2023</h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Stats + Meets + Portal -->
+        <div class="alumni-info-col">
+
+          <div class="alumni-stats-strip">
+            <div class="als-item">
+              <div class="als-val">75,000+</div>
+              <div class="als-lbl">Alumni Worldwide</div>
+            </div>
+            <div class="als-item">
+              <div class="als-val">250+</div>
+              <div class="als-lbl">CEOs from WCE</div>
+            </div>
+            <div class="als-item">
+              <div class="als-val">40+</div>
+              <div class="als-lbl">Countries</div>
+            </div>
+            <div class="als-item">
+              <div class="als-val">1947</div>
+              <div class="als-lbl">Est. Year</div>
+            </div>
+          </div>
+
+          <div class="alumni-meets-card">
+            <div class="alumni-meets-title"><i class="fas fa-handshake"></i> Recent Alumni Meets</div>
+
+            <div class="wce-alumni-section">
+              <div class="wce-alumni-heading"><i class="fas fa-user-graduate"></i> WCE Alumni</div>
+              <div class="wce-alumni-carousel" id="wce-alumni-carousel">
+                <div class="wce-alumni-carousel-track" id="wce-alumni-carousel-track">
+                  <img src="Images/alumni/Screenshot 2026-03-29 165903.png" alt="Alumni 1" class="wce-alumni-img">
+                  <img src="Images/alumni/Screenshot 2026-03-29 165911.png" alt="Alumni 2" class="wce-alumni-img">
+                  <img src="Images/alumni/Screenshot 2026-03-29 171337.png" alt="Alumni 3" class="wce-alumni-img">
+                  <img src="Images/alumni/Screenshot 2026-03-29 171347.png" alt="Alumni 4" class="wce-alumni-img">
+                  <img src="Images/alumni/Screenshot 2026-03-29 171355.png" alt="Alumni 5" class="wce-alumni-img">
+                  <img src="Images/alumni/Screenshot 2026-03-29 171406.png" alt="Alumni 6" class="wce-alumni-img">
+                </div>
+              </div>
+            </div>
+
+            <div class="alumni-meet-item">
+              <span class="meet-year">2024</span>
+              <div class="meet-details">
+                <div class="meet-name">WCE Global Alumni Meet 2024</div>
+                <div class="meet-sub">Sangli Campus · 500+ attendees · 15 countries</div>
+              </div>
+            </div>
+            <div class="alumni-meet-item">
+              <span class="meet-year">2023</span>
+              <div class="meet-details">
+                <div class="meet-name">Silver Jubilee Reunion – Batch 1998</div>
+                <div class="meet-sub">Mumbai · 200+ alumni gathered</div>
+              </div>
+            </div>
+            <div class="alumni-meet-item">
+              <span class="meet-year">2023</span>
+              <div class="meet-details">
+                <div class="meet-name">WCE US Chapter Meet</div>
+                <div class="meet-sub">San Francisco Bay Area · Tech professionals</div>
+              </div>
+            </div>
+            <a href="https://walchandsangli.ac.in/student-careers/alumni-engagement/alumni-meets/" target="_blank"
+              class="alumni-meet-more">View all alumni meets ›</a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!-- ══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <span>© 2025 Walchand College of Engineering, Sangli | Government Aided Autonomous Institution</span>
+    <div style="display: flex; align-items: center; gap: 18px;">
+      <div class="footer-links">
+        <a href="#" onclick="openModal('admissions-modal')">Admissions</a>
+        <a href="#">NIRF</a>
+        <a href="#">NAAC</a>
+        <a href="#">RTI</a>
+        <a href="#">Grievance</a>
+        <a href="#">Anti-Ragging</a>
+        <a href="#" onclick="openModal('contact-modal')">Contact</a>
+      </div>
+      <div class="footer-social" style="display: flex; gap: 16px; font-size: 16px;">
+        <a href="#" style="color: #fff; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#fff'"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #fff; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#fff'"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" style="color: #fff; text-decoration: none; transition: 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#fff'"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════
+     CHATBOT
+════════════════════════════════════════════════ -->
+  <button id="chat-toggle" onclick="toggleChat()" title="Chat with WCE Assistant">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div id="chat-window">
+    <div id="chat-header">
+      <span>
+        <div class="status"></div> WCE Assistant
+      </span>
+      <button id="chat-close" onclick="toggleChat()"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="chat-messages">
+      <div class="chat-msg bot">👋 Hello! I'm the WCE virtual assistant. I can help you with admissions, academics,
+        placements, campus info, and more!</div>
+    </div>
+    <div class="chat-suggestions" id="chat-suggestions">
+      <span class="chat-sug" onclick="sendSug(this.textContent)">Admissions 2025</span>
+      <span class="chat-sug" onclick="sendSug(this.textContent)">Placement stats</span>
+      <span class="chat-sug" onclick="sendSug(this.textContent)">Departments</span>
+      <span class="chat-sug" onclick="sendSug(this.textContent)">Fee structure</span>
+      <span class="chat-sug" onclick="sendSug(this.textContent)">Hostel info</span>
+    </div>
+    <div id="chat-input-row">
+      <input type="text" id="chat-input" placeholder="Ask anything..." onkeydown="if(event.key==='Enter') sendChat()">
+      <button id="chat-send" onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+     MODALS
+════════════════════════════════════════════════ -->
+
+  <!-- Admissions Modal -->
+  <div class="modal-overlay" id="admissions-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('admissions-modal')">✕</button>
+      <div class="modal-title">🎓 Admissions 2025–26</div>
+      <p style="color:var(--text2);font-size:12px;margin-bottom:12px;">WCE offers admissions through centralized
+        processes:</p>
+      <ul class="modal-list">
+        <li>📌 <strong>B.E.</strong> – JEE Main / MHT-CET via MHT-CET CAP</li>
+        <li>📌 <strong>M.E./M.Tech</strong> – GATE / MAH-ME-MTech CET</li>
+        <li>📌 <strong>MBA</strong> – MAH-MBA/MMS-CET</li>
+        <li>📌 <strong>Ph.D.</strong> – Entrance Test + Interview</li>
+        <li>📌 <strong>Lateral Entry</strong> – Available for Diploma holders (2nd year)</li>
+      </ul>
+      <div class="info-box">
+        <strong>Important Dates:</strong><br>
+        MHT-CET 2025: April–May 2025 | CAP Rounds: June–July 2025<br>
+        Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+          data-cfemail="dcbdb8b1b5afafb5b3b2af9cabbdb0bfb4bdb2b8afbdb2bbb0b5f2bdbff2b5b2">[email&#160;protected]</a>
+      </div>
+      <a href="https://cetcell.mahacet.org" target="_blank"
+        style="display:inline-block;margin-top:12px;padding:8px 18px;background:var(--primary);color:#fff;border-radius:6px;text-decoration:none;font-size:12px;font-weight:600;">
+        Apply via MHT-CET Portal ›
+      </a>
+    </div>
+  </div>
+
+  <!-- Departments Modal -->
+  <div class="modal-overlay" id="departments-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('departments-modal')">✕</button>
+      <div class="modal-title">🏛️ Departments</div>
+      <div class="modal-grid-2">
+        <a class="modal-card" href="https://example.com/departments/civil" data-dept="civil"
+          style="border-left:3px solid var(--primary)">
+          <div class="card-title">Civil Engineering</div>
+          <div class="card-sub">UG · PG · PhD | 120 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/mechanical" data-dept="mechanical"
+          style="border-left:3px solid var(--accent)">
+          <div class="card-title">Mechanical Engineering</div>
+          <div class="card-sub">UG · PG · PhD | 120 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/computer" data-dept="computer"
+          style="border-left:3px solid var(--success)">
+          <div class="card-title">Computer Engineering</div>
+          <div class="card-sub">UG · PG · PhD | 120 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/electrical" data-dept="electrical"
+          style="border-left:3px solid #8e44ad">
+          <div class="card-title">Electrical Engineering</div>
+          <div class="card-sub">UG · PG · PhD | 60 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/electronics" data-dept="electronics"
+          style="border-left:3px solid #16a085">
+          <div class="card-title">Electronics Engineering</div>
+          <div class="card-sub">UG · PG · PhD | 60 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/it" data-dept="it"
+          style="border-left:3px solid #e74c3c">
+          <div class="card-title">Information Technology</div>
+          <div class="card-sub">UG | 60 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="aiml.html" data-dept="aiml" style="border-left:3px solid #9b59b6">
+          <div class="card-title">AI & Machine Learning</div>
+          <div class="card-sub">UG | 70 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/robotics" data-dept="robotics"
+          style="border-left:3px solid #34495e">
+          <div class="card-title">Robotics & Automation</div>
+          <div class="card-sub">UG | 70 seats (UG)</div>
+        </a>
+
+        <a class="modal-card" href="https://example.com/departments/production" data-dept="production"
+          style="border-left:3px solid #7f8c8d">
+          <div class="card-title">Production Engineering</div>
+          <div class="card-sub">UG | 30 seats (UG)</div>
+        </a>
+        <a class="modal-card" href="https://example.com/departments/mba" data-dept="mba"
+          style="border-left:3px solid var(--accent2)">
+          <div class="card-title">MBA</div>
+          <div class="card-sub">PG (2 Years) | 60 seats</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research Modal -->
+  <div class="modal-overlay" id="research-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('research-modal')">✕</button>
+      <div class="modal-title">🔬 Research &amp; Innovation</div>
+      <p style="color:var(--text2);font-size:12px;margin-bottom:12px;">WCE is a recognized research institution with
+        several active research groups:</p>
+      <ul class="modal-list">
+        <li>🔹 DST-FIST Funded Research Labs</li>
+        <li>🔹 AICTE Research Promotion Scheme Projects</li>
+        <li>🔹 Industry-Sponsored R&amp;D Projects</li>
+        <li>🔹 Publications in Scopus/SCI Indexed Journals</li>
+        <li>🔹 Patents Filed &amp; Granted by Faculty/Students</li>
+      </ul>
+      <div class="modal-stat-grid" style="margin-top:12px;">
+        <div class="modal-stat">
+          <div class="big" style="color:var(--primary)">200+</div>
+          <div class="lbl">Publications/yr</div>
+        </div>
+        <div class="modal-stat">
+          <div class="big" style="color:var(--accent)">50+</div>
+          <div class="lbl">PhD Scholars</div>
+        </div>
+        <div class="modal-stat">
+          <div class="big" style="color:var(--success)">30+</div>
+          <div class="lbl">Patents</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notices Modal -->
+  <div class="modal-overlay" id="notices-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('notices-modal')">✕</button>
+      <div class="modal-title">📋 Notices &amp; Announcements</div>
+
+      <!-- Important Announcements Section -->
+      <div
+        style="margin-bottom:20px;padding:16px;background:var(--bg3);border-radius:8px;border-left:4px solid var(--accent);">
+        <h4 style="color:var(--accent);font-size:14px;margin-bottom:8px;display:flex;align-items:center;gap:8px;">
+          <i class="fas fa-bullhorn"></i> <span data-t="announceTitle">Important Announcements</span>
+        </h4>
+        <p style="color:var(--text2);font-size:12px;margin-bottom:10px;" data-t="announceIntro">
+          Welcome to Walchand College of Engineering, Sangli. Please note the following:
+        </p>
+        <ul style="margin:0 0 0 16px;color:var(--text2);font-size:12px;">
+          <li data-t="ann1">📌 Admissions 2025–26 are now open for UG, PG &amp; PhD programs</li>
+          <li data-t="ann2">📅 End Semester Examinations scheduled — check notice board</li>
+          <li data-t="ann3">🏆 WCE ranked in NIRF 2024 — Engineering category</li>
+          <li data-t="ann4">📋 NAAC A+ Accredited Institution</li>
+        </ul>
+      </div>
+
+      <!-- All Notices List -->
+      <div id="all-notices-list" style="font-size:12px;"></div>
+    </div>
+  </div>
+
+  <!-- Events Modal -->
+  <div class="modal-overlay" id="events-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('events-modal')">✕</button>
+      <div class="modal-title">🎉 Events &amp; News</div>
+      <div class="event-card" style="border-color:var(--accent)">
+        <div class="ev-title">YANTRA 2025 – National Technical Fest</div>
+        <div class="ev-date">📅 April 12–14, 2025 | WCE Campus</div>
+        <p>Multi-disciplinary technical competition with events in coding, robotics, circuit design, and more. Open to
+          all engineering students.</p>
+      </div>
+      <div class="event-card" style="border-color:var(--primary)">
+        <div class="ev-title">International Conference on Emerging Technologies</div>
+        <div class="ev-date">📅 May 8–10, 2025 | Research Park</div>
+        <p>Call for papers open. Topics include AI/ML, IoT, Smart Cities, and Renewable Energy.</p>
+      </div>
+      <div class="event-card" style="border-color:var(--success)">
+        <div class="ev-title">Annual Prize Distribution Ceremony 2025</div>
+        <div class="ev-date">📅 March 28, 2025 | Main Auditorium</div>
+        <p>Annual academic prize distribution for meritorious students of all batches.</p>
+      </div>
+      <div class="event-card" style="border-color:#8e44ad">
+        <div class="ev-title">WCE Cultural Fest – SPANDAN</div>
+        <div class="ev-date">📅 February 2025 | Campus Grounds</div>
+        <p>Annual cultural extravaganza featuring music, dance, drama, and art competitions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Academics Modal -->
+  <div class="modal-overlay" id="academics-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('academics-modal')">✕</button>
+      <div class="modal-title">📚 Academic Resources</div>
+      <div class="modal-grid-2">
+        <a href="#" class="modal-card" style="text-decoration:none;display:block">
+          <div style="font-size:20px;margin-bottom:6px">📅</div>
+          <div class="card-title">Academic Calendar</div>
+          <div class="card-sub">2024-25 schedule</div>
+        </a>
+        <a href="#" class="modal-card" style="text-decoration:none;display:block">
+          <div style="font-size:20px;margin-bottom:6px">📘</div>
+          <div class="card-title">Syllabi / Curriculum</div>
+          <div class="card-sub">All programmes</div>
+        </a>
+        <a href="#" class="modal-card" style="text-decoration:none;display:block">
+          <div style="font-size:20px;margin-bottom:6px">📋</div>
+          <div class="card-title">Exam Schedule</div>
+          <div class="card-sub">Timetables &amp; halls</div>
+        </a>
+        <a href="#" class="modal-card" style="text-decoration:none;display:block">
+          <div style="font-size:20px;margin-bottom:6px">🏆</div>
+          <div class="card-title">Results</div>
+          <div class="card-sub">Via ERP portal</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placement Modal -->
+  <div class="modal-overlay" id="placement-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('placement-modal')">✕</button>
+      <div class="modal-title">💼 Placement Statistics 2024</div>
+      <div class="modal-stat-grid" style="margin-bottom:14px;">
+        <div class="modal-stat">
+          <div class="big" style="color:var(--primary)">95%</div>
+          <div class="lbl">Placed</div>
+        </div>
+        <div class="modal-stat">
+          <div class="big" style="color:var(--accent)">₹42L</div>
+          <div class="lbl">Highest CTC</div>
+        </div>
+        <div class="modal-stat">
+          <div class="big" style="color:var(--success)">₹6.8L</div>
+          <div class="lbl">Average CTC</div>
+        </div>
+      </div>
+      <p style="color:var(--text2);font-size:12px;margin-bottom:8px"><strong>Top Recruiters (2024):</strong></p>
+      <p style="color:var(--text2);font-size:11px;line-height:1.8">TCS, Infosys, Wipro, Capgemini, Cognizant, L&amp;T,
+        HCL Technologies, Persistent Systems, KPIT Technologies, Cummins India, Forbes Marshall, Emcure Pharmaceuticals,
+        Kirloskar, Thermax, and 100+ more companies.</p>
+      <div class="info-box">
+        <strong>Training &amp; Placement Cell:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+          data-cfemail="86f2e8f6c6f1e7eae5eee7e8e2f5e7e8e1eaefa8e7e5a8efe8">[email&#160;protected]</a><br>
+        T&amp;P Officer: +91 233 2700 175
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contact-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('contact-modal')">✕</button>
+      <div class="modal-title">📞 Contact Us</div>
+      <div class="modal-grid-2" style="font-size:12px;">
+        <div>
+          <p style="font-weight:600;color:var(--primary);margin-bottom:6px">Address</p>
+          <p style="color:var(--text2)">Walchand College of Engineering<br>Vishrambag, Sangli - 416415<br>Maharashtra,
+            India</p>
+        </div>
+        <div>
+          <p style="font-weight:600;color:var(--primary);margin-bottom:6px">Phone</p>
+          <p style="color:var(--text2)">+91 233 2700 170<br>+91 233 2700 171<br>Fax: +91 233 2700 167</p>
+        </div>
+        <div>
+          <p style="font-weight:600;color:var(--primary);margin-bottom:6px">Email</p>
+          <p style="color:var(--text2)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="0c7c7e65626f657c6d604c7b6d606f646d62687f6d626b6065226d6f226562">[email&#160;protected]</a><br><a
+              href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="d9b8bdb4b0aaaab0b6b7aa99aeb8b5bab1b8b7bdaab8b7beb5b0f7b8baf7b0b7">[email&#160;protected]</a><br><a
+              href="/cdn-cgi/l/email-protection" class="__cf_email__"
+              data-cfemail="88fce6f8c8ffe9e4ebe0e9e6ecfbe9e6efe4e1a6e9eba6e1e6">[email&#160;protected]</a></p>
+        </div>
+        <div>
+          <p style="font-weight:600;color:var(--primary);margin-bottom:6px">Website</p>
+          <p style="color:var(--text2)"><a href="https://www.walchandsangli.ac.in" target="_blank"
+              style="color:var(--primary)">www.walchandsangli.ac.in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map Modal -->
+  <div class="modal-overlay" id="map-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('map-modal')">✕</button>
+      <div class="modal-title">📍 Campus Location</div>
+      <div style="border-radius:8px;overflow:hidden;height:350px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d74.5812!3d16.8524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc121b9e55d5555%3A0x5f4b6d2a1e2c3d4e!2sWalchand%20College%20of%20Engineering%2C%20Sangli!5e0!3m2!1sen!2sin!4v1680000000000"
+          width="100%" height="350" style="border:0" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+      <p style="font-size:11px;color:var(--text3);margin-top:8px">📍 Vishrambag, Sangli – 416415, Maharashtra | Near
+        Railway Station</p>
+    </div>
+  </div>
+
+  <!-- Gallery Modal -->
+  <div class="modal-overlay" id="gallery-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('gallery-modal')">✕</button>
+      <div class="modal-title">🖼️ Campus Gallery</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+        <div
+          style="height:100px;border-radius:7px;background:linear-gradient(135deg,#0a3d62,#1a5276);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);font-size:11px;">
+          Main Building</div>
+        <div
+          style="height:100px;border-radius:7px;background:linear-gradient(135deg,#e67e22,#c0392b);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);font-size:11px;">
+          Library</div>
+        <div
+          style="height:100px;border-radius:7px;background:linear-gradient(135deg,#27ae60,#1a6e40);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.7);font-size:11px;">
+          Sports Complex </div>
+      </div>
+    </div>
+
+    <!-- Site JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
